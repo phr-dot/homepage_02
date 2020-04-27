@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Open+Sans:300,400,600,700,800&display=swap");
+
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Nothing You Could Do', cursive; */
+
+:root {
+  --basic: #222;
+  --dark: #070e1f;
+  --light: #f3f7ff;
+  --accent: #d1a33f;
+  --accent-font: "Nothing You Could Do", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--basic);
+}
+
+/* Header */
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.nav {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100vh;
+  background: var(--dark);
+  padding: 4rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+
+.nav_item a {
+  color: var(--light);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  position: relative;
+  display: block;
+  transition: color 0.5s;
+}
+
+.nav_item a:hover {
+  color: var(--accent);
+}
+
+.nav_item a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.3rem;
+  height: 0.2rem;
+  background: var(--light);
+  opacity: 0.3;
+}
+
+.menu_toggle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3rem;
+  font-size: 2rem;
+  color: var(--light);
+  cursor: pointer;
+}
+
+.fa-times {
+  display: none;
+}
+
+.open .nav_list {
+  transform: translateX(0);
+}
+
+.open .fa-times {
+  display: block;
+}
+
+.open .fa-bars {
+  display: none;
+}
+
+/* Slide */
+.slide {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/slide_01.jpg) center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sub_title {
+  font-family: var(--accent-font);
+  font-size: 6rem;
+  color: var(--accent);
+  margin-bottom: -3rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--light);
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line_left,
+.line_right {
+  width: 100%;
+  max-width: 7.6rem;
+  height: 0.2rem;
+  background: var(--light);
+  position: relative;
+}
+
+.line_left:before,
+.line_right:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0.6rem solid transparent;
+}
+
+.line_left:before {
+  left: 0;
+  border-left-color: var(--light);
+}
+
+.line_right:before {
+  right: 0;
+  border-right-color: var(--light);
+}
+
+.star {
+  margin: 0 1rem;
+}
