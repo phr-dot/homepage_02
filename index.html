@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Homepage 02</title>
+    <title>Homepage-02-trovol</title>
   </head>
   <body>
     <header>
@@ -20,7 +21,7 @@
         </div>
         <a href="index.html"><img src="./images/logo.png" alt="logo" /></a>
         <ul class="nav_list">
-          <li class="nav_item"><a class="active" href="#">about</a></li>
+          <li class="nav_item"><a href="#" class="active">about</a></li>
           <li class="nav_item"><a href="#">alone</a></li>
           <li class="nav_item"><a href="#">yourself</a></li>
           <li class="nav_item"><a href="#">discover</a></li>
@@ -31,66 +32,68 @@
     <!-- Header end -->
 
     <div class="slide">
-      <div class="slide_area">
-        <div class="slide_item item1"></div>
-        <div class="slide_item item2"></div>
-        <div class="slide_item item3"></div>
-      </div>
-
       <div class="slide_container">
-        <h3 class="sub_title">Welcome</h3>
-        <h2 class="title">the trovol</h2>
-        <div class="line">
-          <div class="line_left"></div>
-          <img src="./images/star.png" alt="" class="star_slide" />
-          <div class="line_right"></div>
+        <div class="slide_area">
+          <div class="slide_item item1"></div>
+          <div class="slide_item item2"></div>
+          <div class="slide_item item3"></div>
         </div>
-        <div class="sub_text">
-          <h4>Are you ready to leave?</h4>
-          <a href="#">to the world</a>
+
+        <div class="slide_info">
+          <h3 class="sub_title">Welcome</h3>
+          <h2 class="title">the trovol</h2>
+          <div class="line">
+            <div class="line_left"></div>
+            <img class="star" src="./images/star.png" alt="" />
+            <div class="line_right"></div>
+          </div>
+          <div class="sub_text">
+            <h4>Are you ready to leave?</h4>
+            <a href="#">to the world</a>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Silde end -->
+    <!-- Slide end -->
 
     <section class="story">
       <div class="container">
-        <div class="contents">
+        <div class="content">
           <div class="info left_ani">
             <h3 class="sub_title">Discover</h3>
-            <h2 class="title dark">Our story</h2>
-            <img src="./images/star.png" alt="" class="star" />
+            <h2 class="title title_dark">our story</h2>
+            <img class="star" src="./images/star.png" alt="" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut in quis, nihil soluta id optio perspiciatis impedit. Voluptatibus
-              quia repellat dolorum, modi vero tempora! Atque temporibus perferendis possimus est obcaecati.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In architecto optio quod odio rerum sit obcaecati sequi aliquam autem
+              delectus. Ea incidunt corporis perferendis totam. Provident totam accusamus facilis nam!
             </p>
-            <a class="btn" href="#">Go on a trip</a>
+            <a class="btn" href="#">go on a trip</a>
           </div>
           <div class="space"></div>
           <div class="imgs right_ani slide_area2">
-            <img src="./images/group_01.jpg" alt="" />
-            <img src="./images/group_02.jpg" alt="" />
-            <img src="./images/group_03.jpg" alt="" />
-            <img src="./images/group_04.jpg" alt="" />
+            <div><img src="./images/group_01.jpg" alt="" /></div>
+            <div><img src="./images/group_02.jpg" alt="" /></div>
+            <div><img src="./images/group_03.jpg" alt="" /></div>
+            <div><img src="./images/group_04.jpg" alt="" /></div>
           </div>
-        </div>
-      </div>
     </section>
     <!-- Story end -->
 
     <section class="stillness">
       <div class="container">
-        <h3 class="sub_title">Discover</h3>
-        <h2 class="title">stillness</h2>
+        <div class="info">
+          <h3 class="sub_title">Discover</h3>
+          <h2 class="title">stillness</h2>
+        </div>
       </div>
     </section>
     <!-- Stillness end -->
 
     <section class="travel">
       <div class="container">
-        <div class="contents">
-          <div class="imgs left_ani">
-            <div class="img_group">
+        <div class="content">
+          <div class="imgs">
+            <div class="img_group left_ani">
               <img src="./images/group_01.jpg" alt="" />
               <img src="./images/group_02.jpg" alt="" />
               <img src="./images/group_03.jpg" alt="" />
@@ -100,39 +103,41 @@
           <div class="space"></div>
           <div class="info right_ani">
             <h3 class="sub_title">Discover</h3>
-            <h2 class="title dark">Travel</h2>
-            <img src="./images/star.png" alt="" class="star" />
+            <h2 class="title title_dark">travel</h2>
+            <img class="star" src="./images/star.png" alt="" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut in quis, nihil soluta id optio perspiciatis impedit. Voluptatibus
-              quia repellat dolorum, modi vero tempora! Atque temporibus perferendis possimus est obcaecati.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In architecto optio quod odio rerum sit obcaecati sequi aliquam autem
+              delectus. Ea incidunt corporis perferendis totam. Provident totam accusamus facilis nam!
             </p>
             <a class="btn" href="#">Make A Reservation</a>
           </div>
         </div>
       </div>
     </section>
-    <!-- Travel end -->
+    <!-- Trevel end -->
 
     <section class="alone">
       <div class="container">
-        <h3 class="sub_title">Discover</h3>
-        <h2 class="title">alone</h2>
+        <div class="info">
+          <h3 class="sub_title">Discover</h3>
+          <h2 class="title">alone</h2>
+        </div>
       </div>
     </section>
     <!-- Alone end -->
 
     <section class="yourself">
       <div class="container">
-        <div class="contents">
+        <div class="content">
           <div class="info left_ani">
             <h3 class="sub_title">Discover</h3>
-            <h2 class="title dark">yourself</h2>
-            <img src="./images/star.png" alt="" class="star" />
+            <h2 class="title title_dark">travel</h2>
+            <img class="star" src="./images/star.png" alt="" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut in quis, nihil soluta id optio perspiciatis impedit. Voluptatibus
-              quia repellat dolorum, modi vero tempora! Atque temporibus perferendis possimus est obcaecati.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In architecto optio quod odio rerum sit obcaecati sequi aliquam autem
+              delectus. Ea incidunt corporis perferendis totam. Provident totam accusamus facilis nam!
             </p>
-            <a class="btn" href="#">Go on a trip</a>
+            <a class="btn" href="#">meet people</a>
           </div>
           <div class="space"></div>
           <div class="imgs">
@@ -144,24 +149,22 @@
         </div>
       </div>
     </section>
-    <!-- Yourself end -->
+    <!-- Trevel end -->
 
     <footer>
       <div class="container">
         <div class="go_top">
           <a href="#"><i class="fas fa-chevron-up"></i></a>
         </div>
-
         <div class="footer_contents">
           <div class="footer_about top_ani">
-            <h4>ABOUT TRoVoL</h4>
+            <h4>ABOUT TROVOL</h4>
             <img class="star" src="./images/star.png" alt="" />
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, tempore odio non illo voluptates magnam molestias molestiae
-              error, nobis quam sed? Reiciendis, porro aperiam? Repellat accusamus molestias doloremque culpa hic?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, vitae corporis. Ratione aut minima voluptate nobis enim fugit
+              inventore quia, cum illum obcaecati placeat, modi magnam nulla rem qui sapiente.
             </p>
           </div>
-
           <div class="footer_info bottom_ani">
             <div class="social">
               <h4>follow us</h4>
@@ -176,25 +179,25 @@
                   <a href="#"><i class="fab fa-pinterest"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fab fa-github-alt"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
                 </li>
               </ul>
             </div>
             <div class="newsletter">
-              <h4>newsletter</h4>
-              <form action="" class="newsletter_form">
+              <h4>newslettre</h4>
+              <form action="#" method="get" class="newsletter_form">
                 <input type="text" class="newsletter_input" placeholder="Your email address" />
-                <button class="newsletter_btn"><i class="fas fa-envelope"></i></button>
+                <button type="submit" class="newsletter_btn"><i class="fas fa-envelope"></i></button>
               </form>
             </div>
           </div>
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <script src="./js/main.js"></script>
   </body>
 </html>
