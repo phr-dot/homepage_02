@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Homepage 02</title>
   </head>
@@ -16,18 +20,24 @@
         </div>
         <a href="index.html"><img src="./images/logo.png" alt="logo" /></a>
         <ul class="nav_list">
-          <li class="nav_item"><a href="#">stillness</a></li>
+          <li class="nav_item"><a class="active" href="#">about</a></li>
           <li class="nav_item"><a href="#">alone</a></li>
           <li class="nav_item"><a href="#">yourself</a></li>
           <li class="nav_item"><a href="#">discover</a></li>
-          <li class="nav_item"><a href="#">about</a></li>
+          <li class="nav_item"><a href="#">gallery</a></li>
         </ul>
       </nav>
     </header>
     <!-- Header end -->
 
-    <section class="slide">
-      <div class="container">
+    <div class="slide">
+      <div class="slide_area">
+        <div class="slide_item item1"></div>
+        <div class="slide_item item2"></div>
+        <div class="slide_item item3"></div>
+      </div>
+
+      <div class="slide_container">
         <h3 class="sub_title">Welcome</h3>
         <h2 class="title">the trovol</h2>
         <div class="line">
@@ -40,13 +50,13 @@
           <a href="#">to the world</a>
         </div>
       </div>
-    </section>
+    </div>
     <!-- Silde end -->
 
     <section class="story">
       <div class="container">
         <div class="contents">
-          <div class="info">
+          <div class="info left_ani">
             <h3 class="sub_title">Discover</h3>
             <h2 class="title dark">Our story</h2>
             <img src="./images/star.png" alt="" class="star" />
@@ -57,8 +67,11 @@
             <a class="btn" href="#">Go on a trip</a>
           </div>
           <div class="space"></div>
-          <div class="imgs">
-            <img src="./images/our_story.jpg" alt="" />
+          <div class="imgs right_ani slide_area2">
+            <img src="./images/group_01.jpg" alt="" />
+            <img src="./images/group_02.jpg" alt="" />
+            <img src="./images/group_03.jpg" alt="" />
+            <img src="./images/group_04.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -76,7 +89,7 @@
     <section class="travel">
       <div class="container">
         <div class="contents">
-          <div class="imgs">
+          <div class="imgs left_ani">
             <div class="img_group">
               <img src="./images/group_01.jpg" alt="" />
               <img src="./images/group_02.jpg" alt="" />
@@ -85,7 +98,7 @@
             </div>
           </div>
           <div class="space"></div>
-          <div class="info">
+          <div class="info right_ani">
             <h3 class="sub_title">Discover</h3>
             <h2 class="title dark">Travel</h2>
             <img src="./images/star.png" alt="" class="star" />
@@ -111,7 +124,7 @@
     <section class="yourself">
       <div class="container">
         <div class="contents">
-          <div class="info">
+          <div class="info left_ani">
             <h3 class="sub_title">Discover</h3>
             <h2 class="title dark">yourself</h2>
             <img src="./images/star.png" alt="" class="star" />
@@ -124,8 +137,8 @@
           <div class="space"></div>
           <div class="imgs">
             <div class="img_group">
-              <img src="./images/group_long_01.jpg" alt="" />
-              <img src="./images/group_long_02.jpg" alt="" />
+              <img class="top_ani" src="./images/group_long_01.jpg" alt="" />
+              <img class="bottom_ani" src="./images/group_long_02.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -140,7 +153,7 @@
         </div>
 
         <div class="footer_contents">
-          <div class="footer_about">
+          <div class="footer_about top_ani">
             <h4>ABOUT TRoVoL</h4>
             <img class="star" src="./images/star.png" alt="" />
             <p>
@@ -149,7 +162,7 @@
             </p>
           </div>
 
-          <div class="footer_info">
+          <div class="footer_info bottom_ani">
             <div class="social">
               <h4>follow us</h4>
               <ul class="social_list">
@@ -181,7 +194,7 @@
         </div>
       </div>
     </footer>
-
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

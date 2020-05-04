@@ -1,0 +1,16 @@
+.my_slide {
+  width: 500px;
+}
+
+.my_slide div {
+}
+
+.my_slide img {
+  width: 190px;
+  margin-right: 20px;
+}
+
+.slick-dots {
+  list-style: none;
+  display: flex;
+}
